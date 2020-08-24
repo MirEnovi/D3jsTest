@@ -19,7 +19,7 @@ const Login = () => {
         document.title = 'Login';
     });
 
-    // function 
+    // functions 
     const loginFucntion = (event) => {
         event.preventDefault();
         // hace login 
@@ -28,8 +28,8 @@ const Login = () => {
                 token: 'eyJpc3MiOiJodHRwczpcL1wvbWFya2V0cGxhY2UuYWlkYy5teFwvYXBpXC92MlwvbG9naW4iLCJpYXQiOjE1OTgwNDAzOTIsIm5i'
             })
             localStorage.setItem('token', JSON.stringify('eyJpc3MiOiJodHRwczpcL1wvbWFya2V0cGxhY2UuYWlkYy5teFwvYXBpXC92MlwvbG9naW4iLCJpYXQiOjE1OTgwNDAzOTIsIm5i'));
-            // history.push("/dashboard");
-            return <Redirect to="/"></Redirect>
+            history.push("/dashboard");
+            // return <Redirect to="/"></Redirect>
         
         } else {
             setAlert({

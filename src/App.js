@@ -18,7 +18,6 @@ function App() {
     return (
         <Router>
             <div className= "container-fluid px-0 style-container" >
-            userLogin = false
                 < NavbarComponent/>
                 <Switch>
                     <Route path="/" exact>

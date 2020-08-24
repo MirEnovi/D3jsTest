@@ -5,6 +5,8 @@ const Dashboard = () => {
         document.title = 'Dashboard'
     });
 
+  
+
     return (
         <div className="d-flex justify-content-center align-items-center style-container ">
             <h2>Dashboard</h2>
