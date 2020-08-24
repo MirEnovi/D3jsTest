@@ -17,9 +17,12 @@ const Navbar = () => {
     }, []);
 
     const logout = () => {
+        setTimeout(() => {
+            history.push("/");
+        }, 2000);
         localStorage.clear();
         setUsertoken(null);
-        history.push("/");
+        // history.push("/");
     }
     const exitButton = (
         <button onClick={logout} className="btn btn-outline-light">Salir</button>

@@ -19,16 +19,20 @@ const Login = () => {
         document.title = 'Login';
     });
 
-    // functions 
+    // functions
+
     const loginFucntion = (event) => {
-        event.preventDefault();
+        // event.preventDefault();
         // hace login 
         if (user.email === 'correo@valido.com' && user.password === '123456') {
+            setTimeout(() => {
+                history.push("/dashboard");
+            }, 2000);
+            //history.push("/dashboard");
             setUser({
                 token: 'eyJpc3MiOiJodHRwczpcL1wvbWFya2V0cGxhY2UuYWlkYy5teFwvYXBpXC92MlwvbG9naW4iLCJpYXQiOjE1OTgwNDAzOTIsIm5i'
             })
             localStorage.setItem('token', JSON.stringify('eyJpc3MiOiJodHRwczpcL1wvbWFya2V0cGxhY2UuYWlkYy5teFwvYXBpXC92MlwvbG9naW4iLCJpYXQiOjE1OTgwNDAzOTIsIm5i'));
-            history.push("/dashboard");
             // return <Redirect to="/"></Redirect>
         
         } else {
@@ -37,6 +41,25 @@ const Login = () => {
             })
         }
     }
+
+
+    // const loginFucntion = (event) => {
+    //     event.preventDefault();
+    //     // hace login 
+    //     if (user.email === 'correo@valido.com' && user.password === '123456') {
+    //         setUser({
+    //             token: 'eyJpc3MiOiJodHRwczpcL1wvbWFya2V0cGxhY2UuYWlkYy5teFwvYXBpXC92MlwvbG9naW4iLCJpYXQiOjE1OTgwNDAzOTIsIm5i'
+    //         })
+    //         localStorage.setItem('token', JSON.stringify('eyJpc3MiOiJodHRwczpcL1wvbWFya2V0cGxhY2UuYWlkYy5teFwvYXBpXC92MlwvbG9naW4iLCJpYXQiOjE1OTgwNDAzOTIsIm5i'));
+    //         history.push("/dashboard");
+    //         // return <Redirect to="/"></Redirect>
+        
+    //     } else {
+    //         setAlert({
+    //             alertWrong: true
+    //         })
+    //     }
+    // }
     const handleInputChange = (event) => {
         setUser({
             ...user,
