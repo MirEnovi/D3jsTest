@@ -1,0 +1,9 @@
+.style-card {
+    min-width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  .style-card {
+    min-width: 90%;
+  }
+}

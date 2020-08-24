@@ -3,30 +3,34 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    // Link
+    Redirect
 } from "react-router-dom"
 import NavbarComponent from './components/Navbar';
+import Login from './routes/Login.jsx';
+import Dashboard from './routes/Dashboard';
+
+// CSS
+import './css/app.css'
 
 function App() {
+    
+    
     return (
         <Router>
-            <div className="container">
-                < NavbarComponent / >
-                <hr />
+            <div className= "container-fluid px-0 style-container" >
+            userLogin = false
+                < NavbarComponent/>
                 <Switch>
                     <Route path="/" exact>
-                        <h2>
-                            Login
-                        </h2>
+                        { localStorage.getItem('token') ? <Redirect to="/dashboard"/> : <Login />}
                     </Route>
                 </Switch>
                 <Switch>
                     <Route path="/dashboard">
-                        <h2>
-                            Dashboard
-                        </h2>
+                        {  localStorage.getItem('token') ? <Dashboard/> : <Redirect to="/"/> }
                     </Route>
                 </Switch>
+                
             </div>
         </Router>
     );

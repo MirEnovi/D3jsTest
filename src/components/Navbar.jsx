@@ -1,10 +1,36 @@
-import React from 'react'
+import React, {Fragment, useState, useEffect} from 'react'
+import { useHistory } from "react-router-dom";
+
 
 const Navbar = () => {
+    const history = useHistory();
+    const [userToken, setUsertoken] = useState(null)
+    
+    useEffect(() => {
+        let token = JSON.parse(localStorage.getItem('token'))
+        console.log(token);
+        if (token) {
+            setUsertoken({
+                token
+            })
+        }
+    }, []);
+
+    const logout = () => {
+        localStorage.clear();
+        setUsertoken(null);
+        history.push("/");
+    }
+    const exitButton = (
+        <button onClick={logout} className="btn btn-outline-light">Salir</button>
+    );
     return (
-        <div>
-            <h1>React</h1>
-        </div>
+        <Fragment>
+            <nav className="navbar navbar-dark bg-dark fixed-top">
+                <h3 className="navbar-brand" >React D3</h3>
+                { userToken ? exitButton : ''}
+            </nav>
+        </Fragment>
     );
 }
 
