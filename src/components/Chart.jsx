@@ -14,7 +14,7 @@ class Chart extends Component {
     drawChart() {
         let screenSize = window.screen.width;
         let nodeData = data;
-        let width = screenSize < 650 ? 200 : 350; 
+        let width = 400; 
         let height = screenSize < 650 ? 200 : 350;
         let radius = Math.min(width, height) / 2;
         let color = d3.scaleOrdinal()

@@ -27,10 +27,10 @@ const Dashboard = () => {
                 <h2>Dashboard</h2>
                 </div>
                 <div className="row">
-                    <div className="col-sm-12 col-md-6 px-0">
+                    <div className="col-sm-12 col-md-6 px-0 ">
                         <Chart/>
                     </div>
-                    <div className="col-sm-12 col-md-6">
+                    <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center mt-4">
                         <Card title={'Sub A1'} subtitle={4}/>
                     </div>
                 </div>
