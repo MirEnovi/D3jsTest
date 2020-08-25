@@ -60,7 +60,8 @@ const Login = () => {
             <div className="d-flex flex-column justify-content-center align-items-center style-container " >
                 { alert.alertWrong ? alertMessage : '' }
                 <div className="card style-card">
-                    <div className="card-body">
+                    <div className="card-body ">
+                        <h2 className="card-title text-center">Login</h2>
                         <form  onSubmit={loginFucntion}>
                             <div className="form-group">
                                 <input

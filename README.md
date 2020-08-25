@@ -1,68 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Dashboard D3JS
 
-In the project directory, you can run:
+## Descripción y contexto
 
-### `npm start`
+Prueba de aplicación usando React.js con Hooks y D3js, con los siguientes elementos:
+Una barra de navegación con dos rutas a las siguientes vistas:
+- LogIn 
+- Dashboard
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+D3.js es una biblioteca de JavaScript para producir, a partir de datos, infogramas dinámicos e interactivos en navegadores web. Hace uso de tecnologías bien sustentadas como SVG, HTML5, y CSS.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Guía de usuario
 
-### `npm test`
+La aplicación esta deployada [aquí](https://vigorous-roentgen-946f83.netlify.app/), y también se puede probar de manera local, clonando este repositorio.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Acceso:
 
-### `npm run build`
+email: correo@valido.com
+pass: 123456
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Guía de instalación
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para probar de manera local es necesario contar con:
+- [NodeJS](https://nodejs.org/es/).
+- y tu package manager preferido. En este proyecto se uso NPM.
 
-### `npm run eject`
+- El resto de dependencias ya están en el package json.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Guía de instalación:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Clonar este repositorio.
+- Abrir la carpeta de trabajo en tu terminal y escribir lo siguiente.
+    - git clone https://github.com/MirEnovi/D3jsTest.git
+    - cd d3test
+    - npm install
+    - npm start
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Y listo.
 
-## Learn More
+### Dependencias
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Para este proyecto se uso:
+- [D3js](https://d3js.org/).
+- [React](https://jedwatson.github.io/react-select/).
+- [NodeJS](https://nodejs.org/es/).
+- [NPM](https://www.npmjs.com/).
+- [Bootstrap](https://getbootstrap.com/).
+- [Netlify](https://app.netlify.com/).
