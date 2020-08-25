@@ -1,11 +1,11 @@
-import React, {useEffect} from 'react'
+import React, { useRef } from "react";
 import * as d3 from 'd3'
 
 const chart = () => {
 	const divRef = useRef(null);
-	useEffect(() => {
-		let accessToRef = d3.selectAll(divRef.current);
-	}, [])
+	// useEffect(() => {
+	// 	let accessToRef = d3.selectAll(divRef.current);
+	// }, [])
 
 
 	let data = [12, 36, 6, 25, 35, 10, 20];
@@ -23,11 +23,14 @@ const chart = () => {
 		.enter()
 		.append('rect')
 		.attr('x', (d, i) => i * 70) 
-		.attr('y', (d, i) => h - 10 * 70); 
+		.attr('y', (d, i) => height - 10 * 70)
+		.attr('width', 65)
+		.attr('fill', 'tomato')
+		; 
 		
 
 
-  	return <svg ref={divRef}></svg>;
+  	return <div ref={divRef}></div>;
 };
 
 export default chart
