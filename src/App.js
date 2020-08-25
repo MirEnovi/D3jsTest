@@ -7,12 +7,8 @@ import {
 import Login from './views/Login'
 import Dashboard from './views/Dashboard'
 
-// CSS
-import './css/app.css'
 
 function App() {
-    
-    
     return (
         <Router>
             <Switch>

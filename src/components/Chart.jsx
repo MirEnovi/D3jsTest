@@ -1,4 +1,4 @@
-import React, { Component, createRef } from "react";
+import React, { Component, Fragment, createRef } from "react";
 import * as d3 from 'd3'
 import data from '../data/data'
 
@@ -12,10 +12,10 @@ class Chart extends Component {
     }
 
     drawChart() {
-        
+        let screenSize = window.screen.width;
         let nodeData = data;
-        let width = 300; 
-        let height = 300;
+        let width = screenSize < 650 ? 200 : 350; 
+        let height = screenSize < 650 ? 200 : 350;
         let radius = Math.min(width, height) / 2;
         let color = d3.scaleOrdinal()
             .range(["red", "green", "blue", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
@@ -49,10 +49,10 @@ class Chart extends Component {
 
     render() {
         return (
-            <>
+            <Fragment>
                 <svg ref={this.myRef}></svg>
-            </>
-        )
+            </Fragment>
+        );
     }
 }
 
