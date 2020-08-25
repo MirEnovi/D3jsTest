@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import Chart2 from "../components/Chart2";
+import Chart from "../components/Chart";
 
 const Dashboard = () => {
     const history = useHistory();
@@ -21,7 +21,7 @@ const Dashboard = () => {
             <Navbar exit/>
             <div className="d-flex  flex-column justify-content-center align-items-center style-container ">
                 <h2>Dashboard</h2>
-                <Chart2/>
+                <Chart/>
             </div>
         </div>
     );
