@@ -10,7 +10,7 @@ const Test = () => {
     const history = useHistory();
 
     useEffect(() => {
-        document.title = 'Dashboard 2'
+        document.title = 'Test'
         if (localStorage.getItem('token')) {
             console.log('logueado')
         } else {
