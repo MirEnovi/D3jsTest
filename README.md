@@ -5,8 +5,9 @@
 
 Prueba de aplicación usando React.js con Hooks y D3js, con los siguientes elementos:
 Una barra de navegación con dos rutas a las siguientes vistas:
-- LogIn 
+- LogIn
 - Dashboard
+- Test - Actualización 15 de septiembre del 2020. Grafica de barras.
 
 D3.js es una biblioteca de JavaScript para producir, a partir de datos, infogramas dinámicos e interactivos en navegadores web. Hace uso de tecnologías bien sustentadas como SVG, HTML5, y CSS.
 

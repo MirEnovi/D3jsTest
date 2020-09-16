@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import Chart from '../components/Chart';
-import Card from '../components/Card'
+import Chart2 from '../components/Chart2';
+
 // css
 import '../css/styles.css'
 
-const Dashboard = () => {
+const Test = () => {
     const history = useHistory();
 
     useEffect(() => {
-        document.title = 'Dashboard'
+        document.title = 'Dashboard 2'
         if (localStorage.getItem('token')) {
             console.log('logueado')
         } else {
@@ -28,15 +28,13 @@ const Dashboard = () => {
                 </div>
                 <div className="row">
                     <div className="col-sm-12 col-md-6 px-0 ">
-                        <Chart/>
+                        <Chart2/>
                     </div>
-                    <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center mt-4">
-                        <Card title={'Sub A1'} subtitle={4}/>
-                    </div>
+
                 </div>
             </div>
         </div>
     );
 }
 
-export default Dashboard
+export default Test
